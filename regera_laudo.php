@@ -22,7 +22,7 @@ $sql = mysqli_query($mysqli,"SELECT OprFrmTipo FROM azoprfrm WHERE OprFrmAuto='$
 
     foreach ($OprFrmAuto as $auto) {
 
-            $data = file_get_contents("https://shaka.exametoxicologico.com.br/gerarlaudo/{$auto}/D");
+            $data = file_get_contents("https://localhost/gerarlaudo/{$auto}/D");
 
             $obj = json_decode($data, true);
 
